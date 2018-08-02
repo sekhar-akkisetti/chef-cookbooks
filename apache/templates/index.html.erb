@@ -1,3 +1,8 @@
-<h1> Hello Rakuten !!!, Your script is written in ruby<h1>
-<h2> IP Adress : <%= node['ipaddress'] %> </h2>
-<h2> Host name : <%= node['hostname'] %> </h2>
+<html>
+  <body>  
+    <h1> Hello Rakuten !!!, Your script is written in ruby<h1>
+    <h2> IP Adress : <%= node['ipaddress'] %> </h2>
+    <h2> Host name : <%= node['hostname'] %> </h2>
+    <h2> Environment : <%= "#{node.chef_environment}" %> </h2>
+  </body>
+<html>
